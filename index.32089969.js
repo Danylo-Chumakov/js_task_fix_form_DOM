@@ -1,0 +1,2 @@
+document.querySelectorAll("form").forEach(function(e){e.querySelectorAll("input").forEach(function(e,t){e.id||(e.id="".concat(e.name||"input","-").concat(t));var n=document.createElement("label");n.classList.add("field-label"),n.setAttribute("for",e.id),n.textContent=e.name?e.name.replace(/([A-Z])/g," $1").trim():"Input ".concat(t+1),e.placeholder=e.name.replace(/([A-Z])/g," $1").trim().replace(/^./,function(e){return e.toUpperCase()}),e.parentElement.insertBefore(n,e)})});
+//# sourceMappingURL=index.32089969.js.map
